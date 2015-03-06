@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+pre{
+border-bottom: 1px solid;
+}
+
+div.suma{
+display: inline-block;
+padding: 1em 1em 1em 1em;
+width=9em;
+float: left;
+page-break-inside: avoid;
+}
+
+</style>
+</head>
+<body>
+{% for s in sumas %}
+<div class="suma">
+<pre>
+{{ s }}
+</pre>
+</div>
+{% endfor %}
+</body>
+</html>
